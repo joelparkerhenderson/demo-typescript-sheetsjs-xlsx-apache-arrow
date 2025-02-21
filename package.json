@@ -1,0 +1,17 @@
+{
+  "name": "demo-javascript-xlsx-arrow",
+  "type": "module",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "apache-arrow": "^19.0.1",
+    "xlsx": "^0.18.5"
+  }
+}
