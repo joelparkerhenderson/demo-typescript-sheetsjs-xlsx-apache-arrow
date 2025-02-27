@@ -1,15 +1,12 @@
 #!/usr/bin/env ts-node
 
-import * as XLSX from 'xlsx'
+import { readFileSync } from 'fs';
+import { tableFromIPC } from 'apache-arrow';
 
-// Specify an Excel spreadsheet URL that contains a table
-const url = "https://docs.sheetjs.com/PortfolioSummary.xls";
+// const arrow = readFileSync('demo.arrow');
+// const table = tableFromIPC(arrow);
 
-// Download the file and convert it to an array buffer
-const file = await (await fetch(url)).arrayBuffer();
+const arrow = readFileSync('demo.parquet');
+const table = tableFromIPC(arrow);
 
-// Parse the file and extract the workbook
-const workbook = XLSX.read(file);
-
-// Print the sheet names
-console.log(workbook.SheetNames);
+console.table(table.toArray());

@@ -1,11 +1,10 @@
-# Demo TypeScript & SheetJS XLSX & Apache Arrow
+# Demo SheetJS XLSX Apache Arrow
 
 Demonstrate:
-
-* [TypeScript](https://www.typescriptlang.org/) 
   
 * [SheetJS XLSX](https://www.npmjs.com/package/xlsx) Microsoft Excel spreadsheet parser and
 * [Apache Arrow](https://www.npmjs.com/package/apache-arrow) DataFrame utilities.
+* [TypeScript](https://www.typescriptlang.org/) 
 
 Run: 
 
@@ -16,7 +15,7 @@ pnpm install xlsx --save
 pnpm install @apache-arrow/ts --save
 ```
 
-Create file `demo.ts`:
+Create file `demo-sheetjs-xlsx.ts`:
 
 ```ts
 #!/usr/bin/env ts-node
